@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  transition: all 0.5s;
+}
+.navbar-scrolled {
+  background-color: #0c0e3f5e;
+  padding: 0;
+  margin: 0;
+}
+.navbar a {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.navbar a:hover {
+  font-weight: 700;
+  font-size: 16px;
+}
+.navbar .container {
+  margin-top: 20px;
+}
+.navbar-toggler {
+  padding: 1px 1px;
+  font-size: 20px;
+  line-height: 0.5;
+  gap: 10px;
+}
+.navbar-toggler-icon {
+  background-color: rgb(255, 255, 255);
+}
+.collapse navbar-collapse {
+  background-color: rgba(255, 255, 255, 0.71);
+  border-radius: 10px;
+  padding: 1px 5px;
+}
+.img-fluid {
+  width: 100%;
+}
+@media (max-width: 990px) {
+  .nav-item {
+    background-color: rgba(128, 128, 128, 0.547);
+  }
+}
+/* home section */
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("./Assert/india.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  animation: change 10s infinite ease-in-out;
+}
+@keyframes change {
+  0% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+      url("./Assert/india.jpg");
+  }
+  20% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+      url("./Assert/singapore.jpg");
+  }
+  40% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+      url("./Assert/malaysia.jpg");
+  }
+  60% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+      url("./Assert/maldives.jpg");
+  }
+  80% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+      url("./Assert/dubai.jpg");
+  }
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+      url("./Assert/tailand.jpg");
+  }
+}
+.home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.changecontent::after {
+  content: " ";
+  color: rgb(252, 252, 252);
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+  0% {
+    content: "INDIA";
+  }
+  20% {
+    content: "SINGAPORE";
+  }
+  40% {
+    content: "MALAYSIA";
+  }
+  60% {
+    content: "MALDIVES";
+  }
+  80% {
+    content: "DUBAI";
+  }
+  100% {
+    content: "THAILAND";
+  }
+}
+.home .content h4 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: 0px 2px 2px black;
+}
+.home .content h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 800;
+  text-shadow: 0px 2px 2px black;
+  margin-top: 5px;
+}
+.home .content p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 0px 2px 2px black;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.home .content a {
+  color: white;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+  text-decoration: none;
+}
+.home .content a:hover {
+  color: #0c0e3f;
+  background-color: white;
+}
+/* BOOK */
+.book {
+  background: #f9f9f9;
+  padding: 30px;
+}
+.main-text h1 {
+  color: #0c0e3f;
+  text-align: center;
+  text-shadow: 0px 2px 2px black;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.book .row {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.book .card {
+  box-shadow: 0px 5px 5px black;
+  transition: 0.5s;
+}
+.book .card img {
+  box-shadow: 0px 1px 1ch rgba(128, 128, 128, 0.768);
+}
+.book form select {
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+  outline: none;
+  font-size: 15px;
+}
+.book form input {
+  padding: 10px;
+  color: black;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 200px;
+}
+.book .submit {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #0c0e3f;
+  color: white;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.book .submit:hover {
+  width: 250px;
+}
+
+/* DESTINATIONS */
+.destinations .main-text h1 {
+  margin-top: 20px;
+}
+.destinations .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 5px 5px -3px black;
+}
+.destinations .card:hover {
+  box-shadow: 5px 6px 6px -3px black;
+}
+.destinations .card img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px;
+}
+.destinations .card .card-body {
+  background: transparent;
+  color: #0c0e3f;
+}
+.destinations .card p {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.destinations .card a {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #0c0e3f;
+  color: white;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.destinations .card a:hover {
+  border-color: #0c0e3f;
+  border-style: solid;
+  background-color: white;
+  color: #0c0e3f;
+}
+/* SERVICES */
+
+.services {
+  background-color: #f9f9f9;
+  margin: 50px;
+  box-shadow: 0px 1px 1ch rgba(128, 128, 128, 0.768);
+}
+.services .main-text h1 {
+  margin-top: 50px;
+  padding: 20px;
+}
+.services .row {
+  margin: 30px;
+}
+.services .card {
+  box-shadow: 2px 5px 5px -3px black;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.services .card:hover {
+  scale: 1.1;
+}
+.services .card i {
+  font-size: 80px;
+  text-align: center;
+  color: #0c0e3f;
+  margin-top: 10px;
+}
+.services .card .card-body {
+  text-align: center;
+}
+.services .card .card-body h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.services .card .card-body p {
+  font-size: 14px;
+  font-weight: 200;
+}
+.star i {
+  color: #0c0e3f;
+}
+/* ABOUT */
+
+.about {
+  margin: 50px;
+  background-color: #f9f9f9;
+}
+.about .row {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.about .row .card {
+  width: 100%;
+  box-shadow: 0px 1px 1ch rgba(128, 128, 128, 0.768);
+}
+.about .row .card img {
+  border-radius: 10px;
+}
+/* FOOTER */
+#contacts {
+  padding: 80px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  background-image: url(./Assert/singapore.jpg);
+}
+#contacts .main-text h1 {
+  font-size: 30px;
+}
+#contacts .container {
+  padding: 50px;
+  background-color: #f9f9f9a8;
+}
+#contacts .container .row {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#contacts .container .row h1 {
+  font-size: 50px;
+  color: #0c0e3f;
+  font-weight: 800;
+  padding-top: 30px;
+  text-shadow: 0px 1px 1px black;
+}
+.social-links i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: #0c0e3f;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.social-links i:hover {
+  background-color: #f9f9f9;
+  color: #0c0e3f;
+}
+.details i {
+  padding: 10px;
+  font-size: 15px;
+  color: #0c0e3f;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #0c0e3f;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 100px;
+}
